@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67ed6a50b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><img src="media1/logo2.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">EDITING APPS</a></li>
+                    <li><a href="#portfolio">LAST WORK</a></li>
+                    <li><a href="#samples">SAMPLES</a></li>
+                    <li><a href="#my-gallary">MY GALLARY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="herader-text">
+                <p>CS Student</p>
+                <h1>HI, I'm <span class="typewrite"
+                    data-loop="yes" data-speed="100"
+                    data-delay="2000" data-words='
+                    ["photographer","photo editor"]'></span></h1>
+                <h3>siddhesh shinde</h3>
+
+                <div class="social-links">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <button class="chatbot-toggler">
+                <span class="material-symbols-rounded">FOTOGRAPHI</span>
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="chatbot">
+            <header>
+                <h2>Chatbot</h2>
+                <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Hi there 👋<br>How can I help you today?</p>
+                </li>
+                </ul>
+                <div class="chat-input">
+                  <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+                  <span id="send-btn" class="material-symbols-rounded">send</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- --------------------------------------------about--------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="media1/pic2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>HI I'M SIDDHESH SHINDE :- 2nd year Bsc Computer Science</p>
+                    <p>I'm a Mobile Photographer</p>
+                    <p></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>SNAPSEED</span><br>Snapseed Photo Ediing</li>
+                            <li><span>LIGHTROOM</span><br>Lightroom Photo editing</li>
+                            <li><span>PHOTOSHOP</span><br>Photoshop Photo Editing and Graphic Designing</li>
+                            <li><span>CANVA</span><br>Canva Graphic Designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>AFTER :- 2021 </span><br>LIGHTROOM IS USING</li>
+                            <li><span>AFTER :- 2020</span><br>I'M START TO USING THE SNAPSEED PHOTOE DITING APPLICATION</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - current</span><br>SY BSC CS. Student at RATNAM COLLEGE</li>
+                            <li><span>2021</span><br>HSC at AD.P.R.NAMJOSHI Jr. COLLEGE</li>
+                            <li><span>2019</span><br>SSC at M.E.S.SCHOOL</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- --------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">TOP EDITING APPS</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>SNAPSEED</h2>
+                    <p>Snapseed is a popular mobile photo-editing application developed by Google. It allows users to enhance their photos using various filters, tools, and effects. The app has a user-friendly interface and provides a range of features for adjusting brightness, contrast, saturation, and other aspects of a photo.</p>
+                    <a href="https://en.wikipedia.org/wiki/Snapseed">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>LIGHTROOM</h2>
+                    <p>Lightroom is a professional photo-editing software developed by Adobe Systems. It is widely used by photographers and designers for organizing, editing, and enhancing their photos.</p>
+                    <a href="https://en.wikipedia.org/wiki/Adobe_Lightroom">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>PHOTOSHOP</h2>
+                    <p>Photoshop is a professional-level photo editing and graphic design software developed by Adobe Systems. It is widely used by graphic designers, photographers, and digital artists for creating and editing images, as well as for designing layouts and graphics for print and digital media.</p>
+                    <a href="https://en.wikipedia.org/wiki/Adobe_Photoshop">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------My Last work------------->   
+    <div id="portfolio">
+        <div class="container">
+            <div class="portfolio-content">
+                <div class="title">
+                    <h1>MY LAST WORK</h1>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="img-grid">
+                        <img src="media1/grid1.jpeg">
+                        <a href="https://drive.google.com/file/d/1tZhw08A32Lmik2zGc9GypADOD1sS8ZTz/view?usp=sharing" class="download-btn">Download</a>
+                        <img src="media1/grid2.jpeg">
+                        <a href="https://drive.google.com/file/d/1HUgh2PCydLNIQbOrmp6Rxi0HMBEAxp6t/view?usp=sharing" class="download-btn">Download</a>
+                    </div>
+                    <div class="img-grid">
+                        <img src="media1/grid5.jpg" alt="">
+                        <a href="https://drive.google.com/file/d/1AKxIJ5u6MZqby8PCYQc2bLrB2p-AR478/view?usp=sharing" class="download-btn">Download</a>
+                        <img src="media1/grid 6.jpeg" alt="">
+                        <a href="https://drive.google.com/file/d/1ppto_cFxJq1kZQJ0kF4Jtrlduiq-xTiV/view?usp=sharing" class="download-btn">Download</a>
+                    </div>
+                    <div class="img-grid">
+                        <img src="media1/grid3.jpeg">
+                        <a href="https://drive.google.com/file/d/1R8j2tlj6hM0qte3QvyebL38E3yYqRrep/view?usp=sharing" class="download-btn">Download</a>
+                        <img src="media1/grid 7.2.jpeg" alt="">
+                        <a href="https://drive.google.com/file/d/1vBHqcB6aHNnQO6_158ISBC9NTtHOtQ2I/view?usp=sharing" class="download-btn">Download</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+
+
+<!-- -------------my nature shootout------------->   
+    <div id="portfolio1">
+        <div class="container1">
+            <div class="portfolio-content1">
+                <div class="title1">
+                    <h1>NATURE SHOOTOUT</h1>
+                </div>
+                <div class="portfolio-grid1">
+                    <div class="img-grid1">
+                        <img src="media1/grid 4.1.jpg">
+                        <div class="layer">
+                            <h3>LOCATION :- THANA<br>TALAO  PALI  LAKE</h3>
+                            <p>Talao Pali or Masunda Lake is one of the most popular hangout spots in Mumbai offering a lot of exciting activities and food to the locals and the tourists.</p>
+                            <a href="#"><i class="fa-solid fa-hand-pointer"></i></a>
+                        </div>
+                    </div>
+                    <div class="img-grid1">
+                        <img src="media1/grid8.3.jpeg" alt="">
+                        <div class="layer">
+                            <h3>LOCATION :- RATNAGIRI</h3>
+                            <p>Ratnagiri is a port town in Maharashtra, western India. Overlooking the Arabian Sea, Ratnadurg Fort has the Bhagwati temple and a lighthouse. Northeast, a fish museum and aquarium includes turtles and a whale skeleton. Thibaw Palace was the residence of the exiled king of Burma.</p>
+                            <a href="#"><i class="fa-solid fa-hand-pointer"></i></a>
+                        </div>
+                    </div>
+                    <div class="img-grid1">
+                        <img src="media1/grid9.2.jpg" alt="">
+                        <div class="layer">
+                            <h3>LOCATION :- STATION SCENARY</h3>
+                            <p>The Konkan (Konkani: कोंकण), also Concan or Kokan, is a stretch of land by the western coast of India, running from Damaon in the north to Anjediva in the south; with the Arabian Sea to the west and the Deccan plateau in the east</p>
+                            <a href="#"><i class="fa-solid fa-hand-pointer"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn1">see more</a>
+            </div>
+        </div>
+    </div>
+
+<!--------------image slider-------------->
+<div id="samples">
+    <div class="title2">
+        <h1>EDITING SAMPLES</h1>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="media1/img-slider6.6.jpeg" style="width:100%">
+            <div class="text">LOCATION :- SANGMESHWAR</div>
+        </div>
+  
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="media1/img-slider6.5.jpeg" style="width:100%">
+            <div class="text">LOCATION :- RATNAGIRI</div>
+        </div>
+  
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="media1/img-slider6.4.jpeg" style="width:100%">
+            <div class="text">LOCATION :- SANGMESHWAR</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="media1/img-slider6.3.jpg" style="width:100%">
+            <div class="text">LOCATION :- CHIPLUN</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="media1/img-slider6.2.jpeg" style="width:100%">
+            <div class="text">LOCATION :- RATNAGIRI</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="media1/img-slider6.1.jpeg" style="width:100%">
+            <div class="text">LOCATION :- CHIPLUN</div>
+        </div>
+  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+  
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+</div>
+
+<script>
+   let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+</script>
+
+
+<!-- gallary -->
+<div class="wrapper" id="my-gallary">
+    <h1>my gallary</h1>
+    <div class="gallary">
+        <div class="image" ><a href="media1/grid 4.1.jpg"><span><img src="media1/grid 4.1.jpg" alt=""></span></a></div>
+        <div class="image" ><span><img src="media1/grid 13.jpg" alt=""></span></div>
+        <div class="image" ><span><img src="media1/grid8.3.jpeg" alt=""></span></div>
+        <div class="image" ><span><img src="media1/grid9.2.jpg" alt=""></span></div>
+        <div class="image" ><span><img src="media1/grid10.jpg" alt=""></span></div>
+        <div class="image" ><span><img src="media1/grid11.jpg" alt=""></span></div>
+        <div class="image" ><span><img src="media1/grid12.jpeg" alt=""></span></div>
+        <div class="image" ><span><img src="media1/grid14.jpg" alt=""></span></div>
+    </div>
+</div>
+
+<!-- filterable -->
+<div id="about1">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-3">
+                <h1 class="sub-title">category</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('nature')">nature</p>
+                    <p class="tab-links" onclick="opentab('leaves')">leaves</p>
+                    <p class="tab-links" onclick="opentab('pro-mode')">landscape</p>
+                </div>
+                <div class="tab-contents active-tab" id="nature">
+                    <ul>
+                        <a href="#"><img src="media1/grid 4.1.jpg" alt=""></a>
+                        <a href="#"><img src="media1/grid10.jpg" alt=""></a>
+                        <a href="#"><img src="media1/grid11.jpg" alt=""></a>
+                        <a href="#"><img src="media1/grid12.jpeg" alt=""></a>
+                        <a href="#"><img src="media1/grid14.jpg" alt=""></a>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="leaves">
+                    <ul>
+                        <a href="#"><img src="media1/grid 6.jpeg" alt=""></a>                     
+                        <a href="#"><img src="media1/grid 7.2.jpeg" alt=""></a>                     
+                        <a href="#"><img src="media1/grid2.jpeg" alt=""></a>                     
+                        <a href="#"><img src="media1/grid5.jpg" alt=""></a>                     
+                        <a href="#"><img src="media1/grid3.jpeg" alt=""></a>                     
+                        <a href="#"><img src="media1/grid1.jpeg" alt=""></a>                     
+                    </ul>
+                </div>
+                <div class="tab-contents" id="pro-mode">
+                    <ul>
+                        <a href="#"><img src="media1/img-slider1.1.jpg" alt=""></a>
+                        <a href="#"><img src="media1/img-slider6.jpg" alt=""></a>
+                        <a href="#"><img src="media1/img-slider6.2.jpeg" alt=""></a>
+                        <a href="#"><img src="media1/img-slider6.6.jpeg" alt=""></a>
+                        <a href="#"><img src="media1/img-slider6.1.jpeg" alt=""></a>
+                        <a href="#"><img src="media1/img-slider6.5.jpeg" alt=""></a>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<!--------- contact-------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT ME</h1>
+                <a href="https://www.instagram.com/its_me_photographer02/"><p><i class="fa-solid fa-paper-plane"></i>its_me_photographer02</p></a>
+                <p><i class="fa-solid fa-phone-volume"></i>9119573180</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="media1/SIDDHESH.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="message">WELCOME TO MY WEBSITE</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @siddhesh. made with<i class="fa-solid fa-heart"></i>by this</p>
+    </div>
+</div>
+
+
+
+<!---------------------script--------------------->
+    <script src="typewriting-master/typewriting.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyu9R3BPn_IgHdMh3p_YRYr7B_zxR9yzu3BHtWWAdOE14EZKStq5yqLyOmY_YQT-HWw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const message = document.getElementById('message')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                message.innerHTML = "MESSAGE SEND SUCCESSFULLY"
+                setTimeout(function(){
+                    message.innerHTML="" 
+                },5000)
+                form.reset
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
